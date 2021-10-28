@@ -1,0 +1,42 @@
+{
+    "service" : {
+        "notInstalled" : {
+            "description" : "Metamask service is not started or installed",
+            "type" : "service",
+            "code" : "notInstalled",
+            "hint" : "If you have already installed Metamask start the service. If not install it."
+        },
+        "noAccounts" : {
+            "description" : "It seems that you don't have any metamask account to be used",
+            "type" : "service",
+            "code" : "noAccounts",
+            "hint" : "Check if you already logged your account at metamask or create one."
+        }
+    },
+    "dev" : {
+        "errorNotFound" : {
+            "description" : "You're throwing an error that doesn't exists",
+            "type" : "dev",
+            "code" : "errorNotFound",
+            "hint" : "Check if you misspelled the error name or if that error code exists"
+        },
+        "notSetSigned" : {
+            "description" : "It seems that the props setSigned was not received",
+            "type" : "dev",
+            "code" : "notSetSigned",
+            "hint" : "Pass a function setSigned(signed) to receive the signed nonce, pass this via props"
+        },
+        "notGetNonce" : {
+            "description" : "It seems that the props getNonce was not received",
+            "type" : "dev",
+            "code" : "notGetNonce",
+            "hint" : "Pass a function getNonce that returns the nonce as a string via props"
+        },
+        "invalidLang" : {
+            "description" : "The language you passed as props is not supported yet or is invalid",
+            "type" : "dev",
+            "code" : "invalidLang",
+            "hint" : "Check if you misspelled the language code or check if it is supported at the docs"
+        }
+    }
+}

@@ -1,15 +1,25 @@
 {
-  "name": "loginmetamask",
-  "version": "0.1.0",
-  "private": true,
+  "name": "metamask-login-react",
+  "version": "0.0.1",
+  "description": "Put a description here",
+  "main": "build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JuanVF/MetamaskAuthButton.git"
+  },
+  "author": {
+    "name": "JuanVFletes",
+    "email": "juanvfletes@gmail.com"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
+    "react-scripts": "^4.0.3",
+    "web-vitals": "^2.1.2",
+    "web3": "^1.6.0"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,0 +1,10 @@
+{
+    "esp" : {
+        "login-button" : "Iniciar con Metamask",
+        "sign-up-button" : "Registrarse con Metamask"
+    },
+    "eng" : {
+        "login-button" : "Login with metamask",
+        "sign-up-button" : "Sign Up with Metamask"
+    }
+}
