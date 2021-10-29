@@ -32,6 +32,12 @@
             "code" : "notGetNonce",
             "hint" : "Pass a function getNonce that returns the nonce as a string via props"
         },
+        "notSetPublicAddress" : {
+            "description" : "It seems that the props notSetPublicAddress was not received",
+            "type" : "dev",
+            "code" : "notSetPublicAddress",
+            "hint" : "Pass a function notSetPublicAddress(signed) to receive the public address, pass this via props"
+        },
         "invalidLang" : {
             "description" : "The language you passed as props is not supported yet or is invalid",
             "type" : "dev",

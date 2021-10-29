@@ -2,8 +2,12 @@ import MetamaskService from "../MetamaskService/"
 import ErrorService from "../ErrorService"
 import Utils from "../Utils"
 
+import React from 'react'
+
 import MetamaskIcon from "../assets/images/metamask.svg"
 import languages from "../assets/json/languages.json"
+
+import "../index.css"
 
 const metamaskService = new MetamaskService()
 

@@ -1,8 +1,12 @@
 import MetamaskService from "../MetamaskService/"
 import Utils from "../Utils"
 
+import React from 'react'
+
 import MetamaskIcon from "../assets/images/metamask.svg"
 import languages from "../assets/json/languages.json"
+
+import "../index.css"
 
 const metamaskService = new MetamaskService()
 
@@ -12,6 +16,8 @@ const metamaskService = new MetamaskService()
  * @returns 
  */
 function SignUpButton(props){
+    logInitialErrors(props)
+
     let lang = props.language || "eng"
     let isDarkTheme = props.isDarkTheme || false
 
@@ -43,6 +49,27 @@ function getJSX(lang, isDarkTheme){
             <p>{languages[lang]["sign-up-button"]}</p>
         </div>
     )
+}
+
+/**
+ * This function will check if there are initial errors, if exists it will throw it and log it
+ * @param {object} props This will have { language, getNonce, setSigned, isDarkTheme }
+ */
+const logInitialErrors = props => {
+    let err = undefined
+    let errorCollection = ErrorService.GetErrors()
+
+    if (!Utils.isMetamaskInstalled(metamaskService.web3))
+        err = errorCollection.service.notInstalled
+
+    if (!props.setPublicAddress)
+        err = errorCollection.dev.notGetNonce
+
+    if (props.language && !languages[props.language])
+        err = errorCollection.dev.invalidLang
+
+    if (err)
+        ErrorService.LogError(err)
 }
 
 export default SignUpButton

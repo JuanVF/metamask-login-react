@@ -1,8 +1,14 @@
 {
   "name": "metamask-login-react",
-  "version": "0.0.1",
-  "description": "Put a description here",
+  "version": "1.0",
+  "description": "The React Component for login and sign up with MetaMask.",
   "main": "build/index.js",
+  "module": "build/",
+  "files": [
+    "build",
+    "src/assets/",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/JuanVF/MetamaskAuthButton.git"
@@ -11,10 +17,26 @@
     "name": "JuanVFletes",
     "email": "juanvfletes@gmail.com"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-stage-0": "^7.8.3",
+    "@svgr/webpack": "^5.5.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.2.6",
+    "url-loader": "^4.1.1",
+    "web3": "^1.6.0",
+    "webpack": "^5.60.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "peerDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "^4.0.3",
@@ -22,10 +44,7 @@
     "web3": "^1.6.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "webpack"
   },
   "eslintConfig": {
     "extends": [
