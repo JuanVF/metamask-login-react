@@ -1,6 +1,6 @@
 {
   "name": "metamask-login-react",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "The React Component for login and sign up with MetaMask.",
   "main": "build/index.js",
   "module": "build/",
