@@ -1,23 +1,30 @@
 {
   "name": "metamask-login-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The React Component for login and sign up with MetaMask.",
   "main": "build/index.js",
   "module": "build/",
   "files": [
     "build",
-    "src/assets/",
     "README.md"
+  ],
+  "keywords": [
+    "web3",
+    "metamask",
+    "login",
+    "react",
+    "npm"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/JuanVF/MetamaskAuthButton.git"
+    "url": "git@github.com:JuanVF/metamask-login-react.git"
   },
   "author": {
     "name": "JuanVFletes",
     "email": "juanvfletes@gmail.com"
   },
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.15.8",

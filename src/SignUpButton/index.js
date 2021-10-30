@@ -1,4 +1,5 @@
 import MetamaskService from "../MetamaskService/"
+import ErrorService from "../ErrorService"
 import Utils from "../Utils"
 
 import React from 'react'
